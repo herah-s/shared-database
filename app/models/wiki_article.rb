@@ -1,0 +1,2 @@
+class WikiArticle < ApplicationRecord
+end
