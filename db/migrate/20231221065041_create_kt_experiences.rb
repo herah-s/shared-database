@@ -6,7 +6,7 @@ class CreateKtExperiences < ActiveRecord::Migration[7.1]
       t.float :price
       t.string :category
       t.string :address
-      t.references :host, null: false, foreign_key: true
+      t.references :host, null: false, foreign_key: { to_table: :users }
 
       t.timestamps
     end
